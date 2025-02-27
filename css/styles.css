@@ -584,6 +584,8 @@ height: 40px;}
 
 .modal {
 
+padding: 72px 24px 24px 24px;
+
 position: absolute;
 top: 50%;
 left: 50%;
@@ -603,5 +605,131 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
     transform: translate(-50%, -50%) scale(1.5);
     
+}
 
+.close-btn {
+    padding: 0;
+    border: 0;
+    line-height: 0;
+
+    position: absolute;
+    right: 24px;
+    top: 24px;
+   border-radius: 150%;
+   background-color: red;
+stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #404BBF;
+    fill: #fff;
+}
+
+.close-btn-icon {
+   
+}
+
+
+.modal-text {
+    width: 360px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 16px;
+}
+
+
+.modal-form{
+
+}
+
+.modal-container-block
+ {
+    margin-bottom: 20px;
+}
+
+.modal-label
+{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.modal-form-input-container {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.modal-form-input
+ {
+    height: 40px;
+    width: 100%;
+border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        padding-left: 38px;
+        outline: transparent;
+
+
+}
+
+
+.modal-form-input:focus{
+border: 1px solid #4d5ae5;
+}
+
+.modal-form-input::placeholder {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+} 
+
+
+
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.modal-form-input:focus + .modal-form-icon
+
+{
+
+fill:#4d5ae5;
+
+}
+
+.custom-checkbox {
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        width: 16px;
+        height: 16px;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        background-color: transparent;
+        margin-right: 8px;
+}
+
+.checkbox:checked + .label-checkbox .custom-checkbox {
+
+border-radius: 2px;
+    fill:#f4f4fd;
+    background-color: #404bbf;
 }
