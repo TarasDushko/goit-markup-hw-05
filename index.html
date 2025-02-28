@@ -428,24 +428,27 @@
                       </svg></a>
                     </li>
                           </ul>
+
       </div>
+
       <div class="footer-subscribe">
         <p class="sub-text">Subscribe</p>
         <form class="footer-email-form">
-  <label for="email"></label>
-  <input type="email" name="email" id="email" placeholder="E-mail"/>
+  <label class="footer-label" for="email"></label>
+  <input class="footer-form-input"name="email" type="email" name="email" id="email" placeholder="E-mail"/>
 
-  <button type="submit">Subscribe
+  <button class="footer-sub-btn"type="submit">Subscribe
     <svg >
-      <use href="./images/icons.svg#icon-telegram" width="24" height="24"></use>
+      <use href="./images/icons.svg#icon-telegram" width="24" height="20"></use>
     </svg>
   </button>
 </form>
       </div>
     </div>
     </footer>
+
     <!--#endregion footer-->
-<div class="backdrop is-open">
+<div class="backdrop">
  <div class="modal">
 <button type="button" class="close-btn">
   <svg  class="close-btn-icon" width="8" height="8">
@@ -473,7 +476,7 @@
 <label class="modal-label" for="user-tel">Phone</label>
 <div class="modal-form-input-container">
   <input class="modal-form-input" type="tel" id="user-tel" name="user-tel" placeholder="xxx-xxx-xxx" required>
-  <svg class="modal-form-icon" width="18" height="18">
+  <svg class="modal-form-icon" width="18" height="24">
     <use href="./images/icons.svg#icon-phone">
 
     </use>
@@ -486,7 +489,7 @@
 <label class="modal-label" for="user-email">Email</label>
 <div class="modal-form-input-container">
   <input class="modal-form-input" type="email" id="user-email" name="user-email" placeholder="taras@gmail.com" required>
-  <svg class="modal-form-icon" width="18" height="18">
+  <svg class="modal-form-icon" width="18" height="24">
     <use href="./images/icons.svg#icon-email">
 
     </use>
@@ -495,22 +498,22 @@
 </div>
 
 
-<div class="modal-form-input-container">
-<label class="modal-label-comment" for="comment-text">Comment</label>
-<textarea name="comment" id="comment-text"></textarea>
+<div class="modal-form-input-container textarea">
+<label class="modal-label" for="user-comment">Comment</label>
+<textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
 </div>
 
 
 
 
 <div class="modal-form-cont-checkbox">
-  <input type="checkbox"  class="checkbox visually-hidden" id="user-checkbox">
-<label class="label-checkbox" for="user-checkbox"><span class="custom-checkbox">
+  <input type="checkbox"  class="checkbox visually-hidden" id="user-privacy" name="user-privacy" value="true">
+<label class="label-checkbox" for="user-privacy"><span class="custom-checkbox">
   <svg class="" width="10" height="8">
     <use href="./images/icons.svg#icon-done" ></use>
   </svg>
 </span>
-   I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+   I accept the terms and conditions of the <a class="checkbox-link"href="">Privacy Policy</a></label>
 
 
 
@@ -523,7 +526,7 @@
 
 
 
-<button type="submit">Send</button>
+<button class="form-btn" type="submit">Send</button>
 </form>
  </div>
 </div>
