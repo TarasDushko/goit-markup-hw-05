@@ -606,8 +606,9 @@ gap: 24px;
 
 .footer-btn-icon {
 
+    fill: red;
     margin-left: 16px;
-    fill: #fff;
+  
 }
 
 .footer-sub-btn:hover,
